@@ -11,21 +11,21 @@ fn main() {
 */
 
 /*
-*PS E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo> //! cargo new hello_cargo
-   Compiling hello_cargo v0.1.0 (E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo)
+*PS Path\to\dir> //! cargo new hello_cargo
+   Compiling hello_cargo v0.1.0 (Path\to\dir\hello_cargo)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in //^ 4.20s
-*PS E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo> //! cargo build
-   Compiling hello_cargo v0.1.0 (E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo)
+*PS Path\to\dir\hello_cargo> //! cargo build
+   Compiling hello_cargo v0.1.0 (Path\to\dir\hello_cargo)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in //^ 0.99s
-*PS E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo> //! cargo run  
+*PS Path\to\dir\hello_cargo> //! cargo run  
     Finished `dev` profile [unoptimized + debuginfo] target(s) in //^ 0.01s
      Running `target\debug\hello_cargo.exe`
 Hello, world!
-*PS E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo> //! cargo check
-    Checking hello_cargo v0.1.0 (E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo)
+*PS Path\to\dir\hello_cargo> //! cargo check
+    Checking hello_cargo v0.1.0 (Path\to\dir\hello_cargo)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in //^ 0.23s
-*PS E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo> //! cargo build --release
-   Compiling hello_cargo v0.1.0 (E:\ITI ES\RUST\RUST_Tutorial\GettingStarted\HelloCargo\hello_cargo)
+*PS Path\to\dir\hello_cargo> //! cargo build --release
+   Compiling hello_cargo v0.1.0 (Path\to\dir\hello_cargo)
     Finished `release` profile [optimized] target(s) in //^ 0.59s
 */
 
