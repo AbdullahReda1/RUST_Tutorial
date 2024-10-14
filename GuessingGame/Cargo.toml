@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+rand = "0.9.0-alpha.2"      # Specify the "rand" crate with the semantic version "SemVer" specifier "0.8.5"
+                            # ********************  Semantic Versioning 2.0.0  ******************** 
+                            # Given a version number MAJOR.MINOR.PATCH, increment the:
+                            #  1. MAJOR version when you make incompatible API changes.
+                            #  2. MINOR version when you add functionality in a backward compatible manner.
+                            #  3. PATCH version when you make backward compatible bug fixes.
