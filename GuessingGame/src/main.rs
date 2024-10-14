@@ -5,9 +5,8 @@
        and this trait must be in scope to use those methods.
     3. The `Ordering` type is another enum and has the variants `Less`, `Greater`, and `Equal`.
 */
-use std::io;
+use std::{io, ops::AddAssign, cmp::Ordering};
 use rand::Rng;
-use std::cmp::Ordering;
 
 fn main(){
     println!("Guess the number!");
@@ -23,7 +22,7 @@ fn main(){
     ////println!("The secret number is: {secret_number}");
 
     // Initialize a counter for the number of attempts.
-    let mut attempts:u32 = 0;
+    let mut attempts: u32 = 0;
 
     // The `loop` keyword creates an infinite loop.
     loop {
@@ -35,7 +34,7 @@ fn main(){
             3. The equal sign (=) tells Rust we want to bind something to the variable now.
             4. `new` function creates a new value of some kind in this case empty string.
         */
-        let mut guess = String::new();
+        let mut guess: String = String::new();
 
         /*
             1. Call the `stdin` function from the `io` module, which will allow to handle user input.
@@ -73,7 +72,8 @@ fn main(){
         };
 
         // Increment the attempts counter.
-        attempts += 1;
+        //attempts += 1;
+        attempts.add_assign(1);
 
         // Printing Values with println! "Placeholders".
         println!("You guessed: {}", guess);
