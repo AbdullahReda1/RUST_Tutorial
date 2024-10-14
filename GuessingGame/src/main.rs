@@ -72,7 +72,6 @@ fn main(){
         };
 
         // Increment the attempts counter.
-        //attempts += 1;
         attempts.add_assign(1);
 
         // Printing Values with println! "Placeholders".
