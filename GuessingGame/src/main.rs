@@ -53,7 +53,21 @@ fn main(){
         // The `parse` method on strings converts a string to another type.
         // The colon (:) after guess tells Rust to annotate the variable’s type.
         // The `u32` seen here is an unsigned, 32-bit integer.
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        /*
+            1. Switch from an expect call to a match expression to move from crashing on an error to handling the error.
+            2. `parse` method returns a Result type as an enum that has the variants `Ok` and `Err`.
+            3. `Ok` value that contains the resultant number. That `Ok` value will match the first arm’s pattern,
+               and the match expression will just return the `num` value that parse produced and put inside the `Ok` value.
+            4. If `parse` is not able to turn the string into a number, it will return an `Err` value 
+               that contains more information about the error which is the second `match` arm.
+            5. The underscore '_' is a catchall value that match all `Err` values, no matter what information they have inside them.
+            6. Program will execute the second arm’s code `continue` which tells the program to go to the next iteration of 
+               the loop and ask for another guess. So, effectively, the program ignores all errors that parse might encounter!
+        */
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         // Printing Values with println! "Placeholders".
         println!("You guessed: {}", guess);
