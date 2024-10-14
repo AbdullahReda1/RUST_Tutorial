@@ -22,6 +22,9 @@ fn main(){
     // Printing Values with println! "Placeholders".
     ////println!("The secret number is: {secret_number}");
 
+    // Initialize a counter for the number of attempts.
+    let mut attempts:u32 = 0;
+
     // The `loop` keyword creates an infinite loop.
     loop {
         println!("Please input your guess.");
@@ -69,6 +72,9 @@ fn main(){
             Err(_) => continue,
         };
 
+        // Increment the attempts counter.
+        attempts += 1;
+
         // Printing Values with println! "Placeholders".
         println!("You guessed: {}", guess);
 
@@ -83,7 +89,7 @@ fn main(){
             Ordering::Less    => println!("Too small!"),
             Ordering::Greater => println!("Too big!"),
             Ordering::Equal   => {
-                println!("You win!");
+                println!("You win! It took you {} attempts.", attempts);
                 break;
             }
         }
