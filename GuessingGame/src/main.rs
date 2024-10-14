@@ -20,7 +20,7 @@ fn main(){
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
     // Printing Values with println! "Placeholders".
-    println!("The secret number is: {secret_number}");
+    ////println!("The secret number is: {secret_number}");
 
     // The `loop` keyword creates an infinite loop.
     loop {
