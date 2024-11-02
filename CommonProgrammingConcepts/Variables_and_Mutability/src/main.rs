@@ -1,8 +1,14 @@
 fn main() {
-    let x = 5;
+    /* //! Variables and Mutability  */
+    //let x = 5;    // Immutable variable (can't be changed).
+    let mut x = 5;  // mutable variable (can be changed).
     println!("The value of x is: {x}");
-    x = 6;
+    //x = 6;       // Error message "cannot assign twice to immutable variable `x`" because of assign a second value to the immutable variable.
+    x = 6;         // Not Error.
     println!("The value of x is: {x}");
+
+    /* //! Constants  */
+    
 }
 
 /*
