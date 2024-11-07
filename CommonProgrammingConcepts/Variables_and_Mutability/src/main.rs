@@ -8,6 +8,18 @@ fn main() {
     println!("The value of x is: {x}");
 
     /* //! Constants  */
+    /*
+        Like immutable variables, constants are values that are bound to a name and are not allowed to change,
+        but there are a few differences between constants and variables:
+        1. First, you aren’t allowed to use `mut` with constants,
+           declare constants using the const keyword instead of the let keyword.
+        2. The last difference is that constants may be set only to a constant expression,
+           not the result of a value that could only be computed at runtime.
+    */
+    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
+    println!("The value of THREE_HOURS_IN_SECONDS is: {THREE_HOURS_IN_SECONDS}");
+
+    /* //! Shadowing  */
     
 }
 
